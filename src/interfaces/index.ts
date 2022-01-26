@@ -43,7 +43,7 @@ export interface ConcertEvent {
   box_office_processing_fee_percent: string; // Number (decimal) typo
   box_office_processing_fee_dollar: string; // Number (decimal) typo
   is_race: boolean;
-  privacy: 'private';
+  privacy: 'private' | 'public';
   show_start_date: boolean;
   show_end_date: boolean;
   show_timezone: boolean;
@@ -97,7 +97,7 @@ export interface PriceTier {
   added_fee_dollar: string; // Number (decimal) typo
   added_fee_percent: string; // Number (decimal) typo
   coming_soon: boolean;
-  hidden: boolean;
+  hidden: boolean; // if is true sell
   unhide_promo_code_id: string | null;
   package: boolean;
   package_quantity: number | null;

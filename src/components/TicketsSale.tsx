@@ -1,3 +1,4 @@
+import StoreSeller from './StoreSeller';
 import Title from './Title';
 
 const wheresToBuy = [
@@ -20,7 +21,11 @@ function TicketsSale() {
   return (
     <div>
       <Title content="¿Dónde comprar?" />
-      <div>{wheresToBuy.map(() => null)}</div>
+      <div className="grid grid-cols-2 gap-2 m-auto my-5 max-w-md items-center">
+        {wheresToBuy.map((store, index) => (
+          <StoreSeller key={index} {...store} />
+        ))}
+      </div>
     </div>
   );
 }

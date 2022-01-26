@@ -1,6 +1,6 @@
 interface PropTypes {
-  label: string;
-  value: string;
+  label: string | React.ReactNode;
+  value: string | React.ReactNode;
 }
 
 function Box({ label, value }: PropTypes) {
