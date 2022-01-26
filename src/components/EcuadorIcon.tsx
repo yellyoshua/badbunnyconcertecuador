@@ -1,4 +1,4 @@
-import ecuador from '../assets/ecuador.png';
+const ecuador = '/assets/ecuador.png';
 
 function EcuadorIcon() {
   return (

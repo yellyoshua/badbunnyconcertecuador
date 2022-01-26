@@ -17,8 +17,8 @@ function Landing() {
         <Backdrop className="block md:hidden w-52 m-auto my-5 object-scale-down rounded-xl" />
         <EventTitle />
         <EcuadorIcon />
-        <CountDown end={startAt} />
-        <EventDate date={startAt} />
+        <CountDown end={new Date(startAt)} />
+        <EventDate date={new Date(startAt)} />
         <ArrowDown className="block md:hidden mt-5 p-2" />
       </div>
     </div>

@@ -1,4 +1,4 @@
-import backdrop from '../assets/Bad-Bunny-2022-tour-dates-featured.jpg';
+const backdrop = '/assets/Bad-Bunny-2022-tour-dates-featured.jpg';
 
 interface PropTypes extends React.ComponentProps<'img'> {}
 

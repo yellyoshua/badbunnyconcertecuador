@@ -150,6 +150,6 @@ export interface GlobalStore {
   backdrop: string | null;
   priceTiers: PriceTier[];
   timezone: 'America/Guayaquil';
-  startAt: Date | null;
-  endAt: Date | null;
+  startAt: string | null;
+  endAt: string | null;
 }
