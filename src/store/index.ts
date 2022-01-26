@@ -1,0 +1,19 @@
+import createStore from 'zustand';
+import { devtools } from 'zustand/middleware';
+import { GlobalStore } from '../interfaces';
+
+const initialState: GlobalStore = {
+  eventName: null,
+  concertLocation: null,
+  concertHost: null,
+  backdrop: null,
+  priceTiers: [],
+  timezone: 'America/Guayaquil',
+  startAt: null,
+  endAt: null,
+  loading: true
+};
+
+export default createStore(
+  devtools(() => initialState, { name: 'root-store' })
+);
