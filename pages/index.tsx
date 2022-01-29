@@ -8,7 +8,7 @@ import Layout from '../src/components/Layout';
 import Landing from '../src/components/Landing';
 import Details from '../src/components/Details';
 import Loading from '../src/components/Loading';
-import { getFullConcertData } from '../src/api';
+import { getFullConcertData, getTicketSellStatus } from '../src/api';
 import { GlobalStore } from '../src/interfaces';
 import store from '../src/store';
 import 'dayjs/locale/es';
@@ -49,6 +49,7 @@ export default function HomePage({ concertInfo }: PropTypes) {
 
 export const getStaticProps: GetStaticProps<PropTypes> = async ({}) => {
   const { events } = await getFullConcertData();
+  const ticketSellStatus = await getTicketSellStatus();
 
   const concertLocation = events.location;
   const concertHost = events.host;
@@ -62,6 +63,7 @@ export const getStaticProps: GetStaticProps<PropTypes> = async ({}) => {
   const timezone = events.timezone_name ?? 'America/Guayaquil';
 
   const concertInfo: GlobalStore = {
+    ticketSellStatus,
     concertLocation,
     concertHost,
     backdrop,

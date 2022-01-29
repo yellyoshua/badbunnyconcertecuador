@@ -142,7 +142,16 @@ export interface ConcertInfoReponse {
   };
 }
 
+export interface TicketSellStatus {
+  isPreSale: boolean;
+  isOnSaleNow: boolean;
+  isOnSaleSoon: boolean;
+}
+
+export interface SicketSellStatusResponse extends TicketSellStatus {}
+
 export interface GlobalStore {
+  ticketSellStatus: TicketSellStatus;
   eventName: string | null;
   loading: boolean;
   concertLocation: ConcertLocation | null;

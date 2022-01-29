@@ -5,6 +5,7 @@ import EcuadorIcon from './EcuadorIcon';
 import EventDate from './EventDate';
 import EventTitle from './EventTitle';
 import store from '../store';
+import TicketSellStatus from './TicketSellStatus';
 
 function Landing() {
   const startAt = store((state) => state.startAt!);
@@ -19,6 +20,7 @@ function Landing() {
         <EcuadorIcon />
         <CountDown end={new Date(startAt)} />
         <EventDate date={new Date(startAt)} />
+        <TicketSellStatus />
         <ArrowDown className="block md:hidden mt-5 p-2" />
       </div>
     </div>

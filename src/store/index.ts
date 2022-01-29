@@ -3,6 +3,11 @@ import { devtools } from 'zustand/middleware';
 import { GlobalStore } from '../interfaces';
 
 const initialState: GlobalStore = {
+  ticketSellStatus: {
+    isPreSale: false,
+    isOnSaleNow: false,
+    isOnSaleSoon: true
+  },
   eventName: null,
   concertLocation: null,
   concertHost: null,
