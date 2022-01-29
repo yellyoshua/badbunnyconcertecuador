@@ -6,7 +6,7 @@ function TicketSellStatus() {
   );
 
   const renderSellStatus = () => {
-    if (!isOnSaleNow) {
+    if (isOnSaleNow) {
       return (
         <a href="https://www.worldshottesttour.com/" target="_blank">
           <div className="bg-green-600 hover:bg-green-500 transition-colors px-5 py-1 m-auto shadow-sm md:shadow-lg rounded-md">
