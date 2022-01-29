@@ -6,11 +6,13 @@ function TicketSellStatus() {
   );
 
   const renderSellStatus = () => {
-    if (isOnSaleNow) {
+    if (!isOnSaleNow) {
       return (
         <a href="https://www.worldshottesttour.com/" target="_blank">
           <div className="bg-green-600 hover:bg-green-500 transition-colors px-5 py-1 m-auto shadow-sm md:shadow-lg rounded-md">
-            <p className="text-white text-xl">A la venta!!</p>
+            <p className="text-white text-xl font-sans font-bold">
+              A la venta!!
+            </p>
           </div>
         </a>
       );
@@ -20,7 +22,9 @@ function TicketSellStatus() {
       return (
         <a href="https://www.worldshottesttour.com/" target="_blank">
           <div className="bg-green-600 hover:bg-green-500 transition-colors px-5 py-1 m-auto shadow-sm md:shadow-lg rounded-md">
-            <p className="text-yellow-400 text-xl">Preventa!!</p>
+            <p className="text-yellow-300 text-xl font-sans font-bold">
+              Preventa!!
+            </p>
           </div>
         </a>
       );
@@ -30,7 +34,9 @@ function TicketSellStatus() {
       return (
         <a href="https://www.worldshottesttour.com/" target="_blank">
           <div className="bg-red-700 hover:bg-red-600 transition-colors px-5 py-1 m-auto shadow-sm md:shadow-lg rounded-md">
-            <p className="text-white text-xl">Pronto a la venta</p>
+            <p className="text-white text-xl font-sans font-bold">
+              Pronto a la venta
+            </p>
           </div>
         </a>
       );
