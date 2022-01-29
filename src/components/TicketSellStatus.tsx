@@ -9,7 +9,7 @@ function TicketSellStatus() {
     if (isOnSaleNow) {
       return (
         <a href="https://www.worldshottesttour.com/" target="_blank">
-          <div className="bg-green-600 hover:bg-green-500 transition-colors px-5 py-1 m-auto shadow-lg rounded-md">
+          <div className="bg-green-600 hover:bg-green-500 transition-colors px-5 py-1 m-auto shadow-sm md:shadow-lg rounded-md">
             <p className="text-white text-xl">A la venta!!</p>
           </div>
         </a>
@@ -19,7 +19,7 @@ function TicketSellStatus() {
     if (isPreSale) {
       return (
         <a href="https://www.worldshottesttour.com/" target="_blank">
-          <div className="bg-green-600 hover:bg-green-500 transition-colors px-5 py-1 m-auto shadow-lg rounded-md">
+          <div className="bg-green-600 hover:bg-green-500 transition-colors px-5 py-1 m-auto shadow-sm md:shadow-lg rounded-md">
             <p className="text-yellow-400 text-xl">Preventa!!</p>
           </div>
         </a>
@@ -29,7 +29,7 @@ function TicketSellStatus() {
     if (isOnSaleSoon) {
       return (
         <a href="https://www.worldshottesttour.com/" target="_blank">
-          <div className="bg-red-700 hover:bg-red-600 transition-colors px-5 py-1 m-auto shadow-lg rounded-md">
+          <div className="bg-red-700 hover:bg-red-600 transition-colors px-5 py-1 m-auto shadow-sm md:shadow-lg rounded-md">
             <p className="text-white text-xl">Pronto a la venta</p>
           </div>
         </a>
@@ -38,7 +38,7 @@ function TicketSellStatus() {
 
     return (
       <a href="https://www.worldshottesttour.com/" target="_blank">
-        <div className="bg-red-700 hover:bg-red-900 transition-colors px-5 py-1 m-auto shadow-lg rounded-md">
+        <div className="bg-red-700 hover:bg-red-900 transition-colors px-5 py-1 m-auto shadow-sm md:shadow-lg rounded-md">
           <p className="text-white text-xl">Agotado :(</p>
         </div>
       </a>
